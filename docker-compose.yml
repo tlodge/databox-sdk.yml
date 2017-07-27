@@ -65,6 +65,6 @@ databox-test-server:
   command:
     node index.js
 
-databox-red
+databox-red:
   image:
     tlodge/databox-red
