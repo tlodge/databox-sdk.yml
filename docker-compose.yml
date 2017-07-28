@@ -46,6 +46,7 @@ databox-sdk:
     - "8086:8086"
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock
+    - /opt:/usr/src/app/conf
   container_name:
     databox-sdk
   command:
@@ -64,7 +65,3 @@ databox-test-server:
     databox-test-server
   command:
     node index.js
-
-databox-red:
-  image:
-    tlodge/databox-red
