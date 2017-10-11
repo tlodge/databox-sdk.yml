@@ -13,6 +13,6 @@ and then when up and running you should see volumes created there
 To get started just run
 
 ```
-docker-compose up -d
+docker stack deploy -c docker-compose.yml databox-sdk
 ```
 
